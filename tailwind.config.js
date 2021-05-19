@@ -1,18 +1,18 @@
 module.exports = {
   theme: {
     colors: {
-      primary: '#f4cb08',
-      'primary-dark': '#dcb707',
-      'primary-light': '#f6d539',
+      primary: '#0069d1',
       'primary-contrast': '#fff',
+      'primary-dark': '#004cc0',
       'primary-dark-contrast': '#fff',
-      'primary-light-contrast': '#fff',
-      accent: '#2c2c2c',
-      'accent-dark': '#171717',
-      'accent-light': '#333333',
-      'accent-contrast': '#2c2c2c',
-      'accent-dark-contrast': '#171717',
-      'accent-light-contrast': '#333333'
+      'primary-light': '#b3d2f1',
+      'primary-light-contrast': '##00366B',
+      accent: '#394f65',
+      'accent-contrast': '#fff',
+      'accent-dark': '#2c3d4e',
+      'accent-dark-contrast': '#fff',
+      'accent-light': '#496683',
+      'accent-light-contrast': '#fff'
     },
     fontFamily: {},
     extend: {}

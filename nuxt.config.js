@@ -1,3 +1,5 @@
+import { i18n } from './locales/i18n.js'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -30,12 +32,19 @@ export default {
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    // https://www.npmjs.com/package/@nuxtjs/fontawesome
+    '@nuxtjs/fontawesome'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: [['nuxt-i18n', i18n]],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {},
+  fontawesome: {
+    icons: {
+      solid: ['faGlobe', 'faSort', 'faHome', 'faFileAlt', 'faAddressCard']
+    }
+  }
 }

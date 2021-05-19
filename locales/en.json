@@ -1,0 +1,23 @@
+{
+  "components": {
+    "Navigation": {
+      "pageName": "Healthy Life",
+      "menu": {
+        "Home": "Home",
+        "About": "About",
+        "Contact": "Contact"
+      }
+    },
+    "UI": {
+      "AppSelect": {
+        "genericPlaceholder": "Please select an item"
+      }
+    },
+    "LanguageSelector": {
+      "options": {
+        "en": "English",
+        "pt": "Português"
+      }
+    }
+  }
+}

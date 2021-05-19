@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto">Home Page Works</div>
+  <div class="container mx-auto">Contact Page Works</div>
 </template>
 
 <script lang="ts">
