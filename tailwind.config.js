@@ -7,12 +7,12 @@ module.exports = {
       'primary-dark-contrast': '#fff',
       'primary-light': '#b3d2f1',
       'primary-light-contrast': '##00366B',
-      accent: '#394f65',
+      accent: '#496683',
       'accent-contrast': '#fff',
-      'accent-dark': '#2c3d4e',
+      'accent-dark': '#3b5268',
       'accent-dark-contrast': '#fff',
-      'accent-light': '#496683',
-      'accent-light-contrast': '#fff'
+      'accent-light': '#7c99b6',
+      'accent-light-contrast': '##001F42'
     },
     fontFamily: {},
     extend: {}
