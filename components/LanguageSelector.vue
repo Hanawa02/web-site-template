@@ -25,11 +25,11 @@ export default Vue.extend({
       languageOptions: [
         {
           value: 'en',
-          description: 'components.LanguageSelector.options.en'
+          description: 'components.languageSelector.options.en'
         },
         {
           value: 'pt',
-          description: 'components.LanguageSelector.options.pt'
+          description: 'components.languageSelector.options.pt'
         }
       ]
     }

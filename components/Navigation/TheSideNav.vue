@@ -23,19 +23,20 @@
             "
             @click="$emit('close')"
           >
-            <div class="w-8 text-center">
-              <font-awesome-icon
-                v-if="menu.icon"
-                :icon="menu.icon"
-                class="mx-1 text-primary-dark text-base"
-              />
-            </div>
-            <nuxt-link :to="menu.link">
-              {{ $t(`components.Navigation.menu.${menu.menu}`) }}
+            <nuxt-link class="flex" :to="menu.link">
+              <div class="w-8 text-center">
+                <font-awesome-icon
+                  v-if="menu.icon"
+                  :icon="menu.icon"
+                  class="mx-1 text-primary-dark text-base"
+                />
+              </div>
+
+              {{ $t(`components.navigation.menu.${menu.menu}`) }}
             </nuxt-link>
           </li>
 
-          <li class="text-primary-dark font-semibold">
+          <li class="text-primary-dark font-semibold py-1">
             <language-selector />
           </li>
         </ul>

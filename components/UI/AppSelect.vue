@@ -1,11 +1,13 @@
 <template>
   <div>
-    <div class="flex text-base items-center">
+    <div
+      class="flex text-base items-center cursor-pointer"
+      @click="toggleOptions()"
+    >
       <font-awesome-icon v-if="icon" :icon="icon" class="mx-2 text-base" />
       <div
         class="flex py-1 cursor-pointer items-center"
         :class="{ 'border border-primary-light': applyBorder }"
-        @click="toggleOptions()"
       >
         <div v-if="selectedItem">
           {{ $t(selectedItem.description) }}
@@ -27,11 +29,9 @@
         class="
           relative
           z-50
-          px-2
-          shadow-lg
+          shadow-card-primary-light
           rounded-sm
           font-medium
-          py-1
           max-h-64
           text-primary
           bg-primary-contrast bg-opacity-90
@@ -40,13 +40,21 @@
         <div
           v-for="(option, index) of options"
           :key="option.description"
-          class="py-1 cursor-pointer"
+          class="px-2 cursor-pointer"
           :class="{
-            'border-b border-primary-light ': index !== options.length - 1
+            'pt-2': index === 0,
+            'pb-2': index === options.length - 1,
+            'background-primary-light': option.value === selectedItemValue
           }"
           @click="setOption(option)"
         >
           {{ $t(option.description) }}
+          <div
+            :class="{
+              'border-b border-primary-light h-0 my-1':
+                index !== options.length - 1
+            }"
+          ></div>
         </div>
       </div>
     </div>
@@ -67,7 +75,7 @@ export default Vue.extend({
     },
     placeholder: {
       type: String,
-      default: 'components.UI.AppSelect.genericPlaceholder'
+      default: 'components.ui.appSelect.genericPlaceholder'
     },
     applyBorder: {
       type: Boolean,

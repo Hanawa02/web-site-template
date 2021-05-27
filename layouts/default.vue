@@ -12,14 +12,14 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import TheHeaderVue from '~/components/Navigation/TheHeader.vue'
-import TheSideNavVue from '~/components/Navigation/TheSideNav.vue'
+import TheHeader from '~/components/Navigation/TheHeader.vue'
+import TheSideNav from '~/components/Navigation/TheSideNav.vue'
 import { MenuLink } from '~/models/Navigation/menu-link.model'
 
 export default Vue.extend({
   components: {
-    'the-header': TheHeaderVue,
-    'the-side-nav': TheSideNavVue
+    'the-header': TheHeader,
+    'the-side-nav': TheSideNav
   },
   props: {
     isLeftAligned: {
@@ -29,9 +29,9 @@ export default Vue.extend({
   data() {
     return {
       menus: [
-        new MenuLink('/', 'Home', 'home'),
-        new MenuLink('/about', 'About', 'file-alt'),
-        new MenuLink('/contact', 'Contact', 'address-card')
+        new MenuLink('/', 'home', 'home'),
+        new MenuLink('/about', 'about', 'file-alt'),
+        new MenuLink('/contact', 'contact', 'address-card')
       ],
       displaySideNav: false
     }

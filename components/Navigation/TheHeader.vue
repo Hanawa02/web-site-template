@@ -5,7 +5,6 @@
       bg-primary
       text-primary-contrast
       py-2
-      px-4
       shadow-md
       h-16
       flex
@@ -14,7 +13,7 @@
   >
     <header
       class="
-        container
+        default-section-constraints
         mx-auto
         flex
         justify-center
@@ -27,17 +26,17 @@
         class="absolute left-0 ml-6"
       />
       <div class="text-center lg:text-left">
-        <nuxt-link to="/">{{ $t('components.Navigation.pageName') }}</nuxt-link>
+        <nuxt-link to="/">{{ $t('components.navigation.pageName') }}</nuxt-link>
       </div>
 
       <ul class="hidden lg:flex lg:items-center">
         <li v-for="menu of menuList" :key="menu.link" class="mx-2">
           <nuxt-link :to="menu.link">
-            {{ $t(`components.Navigation.menu.${menu.menu}`) }}
+            {{ $t(`components.navigation.menu.${menu.menu}`) }}
           </nuxt-link>
         </li>
         <li class="mx-1">|</li>
-        <li><language-selector /></li>
+        <li class="my-1 lg:my-0"><language-selector /></li>
       </ul>
       <div class="w-1 h-1 lg:hidden" />
     </header>
