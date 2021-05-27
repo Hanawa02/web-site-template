@@ -1,22 +1,41 @@
 {
   "components": {
-    "Navigation": {
+    "navigation": {
       "pageName": "Healthy Life",
       "menu": {
-        "Home": "Home",
-        "About": "About",
-        "Contact": "Contact"
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact"
       }
     },
-    "UI": {
-      "AppSelect": {
+    "ui": {
+      "appSelect": {
         "genericPlaceholder": "Please select an item"
       }
     },
-    "LanguageSelector": {
+    "languageSelector": {
       "options": {
         "en": "English",
         "pt": "Português"
+      }
+    }
+  },
+  "pages": {
+    "home": {
+      "banerSection": {
+        "pagePreTitle": "We have",
+        "pageTitle": "A Healthy Solution for you",
+        "pageSubTitle": "This is a really nice description of this Page",
+        "coloredButtonText": "Our Prices",
+        "transparentButtonText": "About Us"
+      },
+      "indroduction": {
+        "preHeadline": "WELCOME TO",
+        "headline": "Healthy Life",
+        "subHeadline": "We are a company bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
+        "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus eleifend. Nullam ornare sapien quis vulputate cursus. Vivamus vel pellentesque purus, sed dignissim elit. Maecenas ac augue metus. Suspendisse in elit nibh. Vestibulum in nibh risus. Phasellus ut cursus sem. Vestibulum feugiat eros lorem, vitae faucibus arcu aliquam ac. Sed tempor, arcu non sodales gravida, sapien dui iaculis felis, vel luctus sapien nisi non orci. Ut laoreet ante tellus, vel hendrerit lorem tincidunt sed. Etiam rhoncus euismod velit ac rutrum.<br><br>Donec porttitor turpis eu mi tempus facilisis. Maecenas id ullamcorper elit, quis tempus enim. In dignissim dolor in accumsan tincidunt. Donec vel diam vitae risus elementum congue. Cras varius, enim vitae condimentum mattis, erat lacus.",
+        "buttonText": "READ MORE",
+        "buttonLink": "link"
       }
     }
   }
